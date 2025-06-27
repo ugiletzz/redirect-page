@@ -5,37 +5,49 @@
   <title>Meets Real Woman Near You</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #fff;
     }
-    
+
     header {
       background: #2e0f25;
       color: #fff;
       padding: 40px 20px;
       text-align: center;
     }
-    
+
     header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
-    
+
     header p {
       font-size: 1.2em;
       margin-top: 0;
     }
 
-    .container {
-      max-width: 700px;
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
       margin: 40px auto;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      border-radius: 10px;
       border: 1px solid #eee;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .left, .right {
+      flex: 1 1 50%;
+      padding: 40px 30px;
+    }
+
+    .left {
+      background-color: #fff;
     }
 
     h4 {
@@ -102,8 +114,21 @@
       border: 0;
     }
 
+    .right {
+      background-color: #fde9e9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
     .articles {
-      max-width: 700px;
+      max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
     }
@@ -136,26 +161,45 @@
       text-decoration: none;
       margin: 0 8px;
     }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        flex: 1 1 100%;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .cta-button {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
+
 <header>
   <h1>Connect with Real WOMAN Near You</h1>
   <p>Casual, discreet, and ready for fun tonight.</p>
 </header>
 
-  <div class="container">
+<!-- Layout kiri-kanan -->
+<div class="main-content">
+  <div class="left">
     <h4>FIRST TIME HERE?</h4>
     <h1>Get 15% OFF Now</h1>
     <p>We guarantee you will be satisfied.</p>
 
-    <!-- CTA BUTTON with custom styling -->
+    <!-- CTA BUTTON -->
     <a class="cta-button" href="https://t.ancdu.link/379081/3785/0?bo=2753,2754,2755,2756&po=6456&aff_sub5=SF_006OG000004lmDN" target="_blank">
       Get 15% OFF Now
       <span class="icon"></span>
     </a>
 
-    <!-- Gambar dipindahkan ke bawah CTA -->
+    <!-- Gambar banner CTA -->
     <div class="cta-image">
       <a href="https://t.ancdu.link/379081/3785/0?bo=Array&target=domainredirects&file_id=554060&po=6456&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0002" target="_blank">
         <img src="https://www.imglnkx.com/3785/010770D_GDAT_18_ALL_EN_71_L.gif" alt="Banner Ad">
@@ -163,26 +207,33 @@
     </div>
   </div>
 
-  <!-- Article section -->
-  <section class="articles">
-    <h2>Recent Articles</h2>
-    <ul>
-      <li><a href="blog.html">Top 5 Reasons to Date a Mature Woman</a></li>
-      <li><a href="blog2.html">How to Spot Real Profiles on Dating Sites</a></li>
-      <li><a href="blog3.html">Best Times to Find Active MILFs Online</a></li>
-      <li><a href="blog4.html">First Message Tips When Chatting with MILFs</a></li>
-    </ul>
-  </section>
+  <div class="right">
+    <img src="your-model-image.jpg" alt="Fashion Model">
+    <!-- Ganti src dengan gambar kamu sendiri -->
+  </div>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 RealEncounters |
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="about.html">About Us</a> |
-    <a href="contact.html">Contact</a>
-  </footer>
+<!-- Artikel -->
+<section class="articles">
+  <h2>Recent Articles</h2>
+  <ul>
+    <li><a href="blog.html">Top 5 Reasons to Date a Mature Woman</a></li>
+    <li><a href="blog2.html">How to Spot Real Profiles on Dating Sites</a></li>
+    <li><a href="blog3.html">Best Times to Find Active MILFs Online</a></li>
+    <li><a href="blog4.html">First Message Tips When Chatting with MILFs</a></li>
+  </ul>
+</section>
 
-  <!-- Adsterra script -->
-  <script type='text/javascript' src='//pl27016915.profitableratecpm.com/40/bf/c5/40bfc5c7d85b3b1b3eeed8e724ad7d28.js'></script>
+<!-- Footer -->
+<footer>
+  © 2025 RealEncounters |
+  <a href="privacy.html">Privacy Policy</a> |
+  <a href="about.html">About Us</a> |
+  <a href="contact.html">Contact</a>
+</footer>
+
+<!-- Adsterra script -->
+<script type='text/javascript' src='//pl27016915.profitableratecpm.com/40/bf/c5/40bfc5c7d85b3b1b3eeed8e724ad7d28.js'></script>
+
 </body>
 </html>
