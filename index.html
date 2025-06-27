@@ -12,73 +12,94 @@
     }
 
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1000px;
+      max-width: 700px;
       margin: 40px auto;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      border-radius: 10px;
       border: 1px solid #eee;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     }
 
-    .left, .right {
-      flex: 1 1 50%;
-      padding: 50px 30px;
-    }
-
-    .left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .left h4 {
+    h4 {
       font-weight: normal;
       font-size: 14px;
-      margin-bottom: 10px;
       color: #444;
+      margin-bottom: 10px;
     }
 
-    .left h1 {
+    h1 {
       font-size: 36px;
-      margin: 0 0 30px;
+      margin: 0 0 20px;
     }
 
-    .left p {
-      margin-bottom: 20px;
+    p {
       color: #666;
+      margin-bottom: 30px;
     }
 
-    .cta-btn {
-      padding: 15px 30px;
-      background-color: black;
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px 15px 25px;
+      background-color: #f55c5c;
       color: white;
-      text-decoration: none;
       font-size: 16px;
-      border: none;
-      cursor: pointer;
-      display: inline-block;
+      text-decoration: none;
+      border-radius: 50px;
+      width: 280px;
+      max-width: 100%;
+      transition: all 0.3s ease;
     }
 
-    .right img {
+    .cta-button span.icon {
+      background: black;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 15px;
+    }
+
+    .cta-button:hover {
+      background-color: #e64545;
+    }
+
+    .cta-button span.icon::before {
+      content: '↗';
+      color: white;
+      font-size: 16px;
+    }
+
+    .cta-image {
+      margin-top: 30px;
+    }
+
+    .cta-image img {
+      width: 300px;
       max-width: 100%;
       height: auto;
-      display: block;
+      border: 0;
     }
 
     .articles {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 30px;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     .articles h2 {
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 15px;
     }
 
     .articles ul {
       list-style: disc;
       padding-left: 20px;
+      text-align: left;
     }
 
     .articles li {
@@ -98,34 +119,26 @@
       text-decoration: none;
       margin: 0 8px;
     }
-
-    @media screen and (max-width: 768px) {
-      .left, .right {
-        flex: 1 1 100%;
-        text-align: center;
-      }
-
-      .container {
-        flex-direction: column;
-      }
-    }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <div class="left">
-      <h4>FIRST TIME HERE?</h4>
-      <h1>Get 15% OFF Now</h1>
-      <p>We guarantee you will be satisfied.</p>
+    <h4>FIRST TIME HERE?</h4>
+    <h1>Get 15% OFF Now</h1>
+    <p>We guarantee you will be satisfied.</p>
 
-      <!-- CTA Button -->
-      <a class="cta-btn" href="https://t.ancdu.link/379081/3785/0?bo=2753,2754,2755,2756&po=6456&aff_sub5=SF_006OG000004lmDN" target="_blank">
-        GET MY 15% OFF
+    <!-- CTA BUTTON with custom styling -->
+    <a class="cta-button" href="https://t.ancdu.link/379081/3785/0?bo=2753,2754,2755,2756&po=6456&aff_sub5=SF_006OG000004lmDN" target="_blank">
+      Get 15% OFF Now
+      <span class="icon"></span>
+    </a>
+
+    <!-- Gambar dipindahkan ke bawah CTA -->
+    <div class="cta-image">
+      <a href="https://t.ancdu.link/379081/3785/0?bo=Array&target=domainredirects&file_id=554060&po=6456&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0002" target="_blank">
+        <img src="https://www.imglnkx.com/3785/010770D_GDAT_18_ALL_EN_71_L.gif" alt="Banner Ad">
       </a>
-    </div>
-    <div class="right">
-      <a href="https://t.ancdu.link/379081/3785/0?bo=Array&target=domainredirects&file_id=554060&po=6456&aff_sub5=SF_006OG000004lmDN&aff_sub4=AT_0002"><img src="https://www.imglnkx.com/3785/010770D_GDAT_18_ALL_EN_71_L.gif" width="300" height="250" border="0" /></a>
     </div>
   </div>
 
@@ -142,7 +155,7 @@
 
   <!-- Footer -->
   <footer>
-    © 2025 RealEncounters | 
+    © 2025 RealEncounters |
     <a href="privacy.html">Privacy Policy</a> |
     <a href="about.html">About Us</a> |
     <a href="contact.html">Contact</a>
